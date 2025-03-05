@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/section\ background.jpg');
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Grid Layout */
+.pricing-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card Styling */
+/* Card Styling */
+.pricing-card {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    outline: 2px solid #ff4081; /* Add this for the hover outline */
+}
+
+
+.pricing-card .card-body {
+    padding: 20px;
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    padding-left: 0;
+}
+
+.pricing-card ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Button Styles */
+.btn-custom {
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Card Styling */
+.dark-card {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.dark-card .btn-custom {
+    background-color: #ffffff;
+    color: #343a40;
+}
+
+.dark-card .btn-custom:hover {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .pricing-card {
+        flex: 1 1 calc(50% - 20px); /* 2 columns for tablet size */
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-card {
+        flex: 1 1 100%; /* 1 column for mobile size */
+    }
+
+    .pricing-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .pricing-card .price {
+        font-size: 2rem;
+    }
+}

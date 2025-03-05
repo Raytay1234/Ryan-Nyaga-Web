@@ -1,0 +1,128 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* Profile Section */
+.profile {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile:hover {
+    transform: translateY(-10px);
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Profile Header */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#Home {
+    font-size: 1.2em;
+    color: #4CAF50;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #fff;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#Home:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Profile Info */
+.profile-info {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.profile-info p {
+    font-size: 1.1em;
+    line-height: 1.8em;
+    margin: 12px 0;
+}
+
+.profile-info strong {
+    color: #4CAF50;
+}
+
+/* Action Links */
+.profile-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-links a {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+    transition: all 0.3s ease;
+}
+
+.profile-links a:hover {
+    background-color: #fff;
+    color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .profile {
+        padding: 20px;
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+
+    .profile-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #Home {
+        display: block;
+        margin: 20px auto;
+    }
+}

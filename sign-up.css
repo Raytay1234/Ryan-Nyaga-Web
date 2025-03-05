@@ -1,0 +1,134 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    /* Dark background */
+    color: #f0f0f0;
+    /* Light text for contrast */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('images/section\ background.jpg');
+}
+
+/* Form Container */
+.form-container {
+    background-color: #222;
+    /* Dark gray background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff4081;
+    /* Accent color for heading */
+}
+
+/* Fieldset and Legend Styling */
+fieldset {
+    border: 1px solid #444;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+fieldset a {
+    width: 100%;
+    padding: 10px;
+    background-color: wheat;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+fieldset a:hover{
+    background-color: #ff006f;
+}
+
+legend {
+    padding: 0 10px;
+    color: #ff4081;
+    /* Accent color */
+    font-weight: bold;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Input Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="url"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #444;
+    border: 1px solid #666;
+    border-radius: 5px;
+    color: #f0f0f0;
+    font-size: 14px;
+}
+
+/* File Input Styling */
+input[type="file"] {
+    margin-top: 10px;
+    padding: 5px;
+    color: #ff006f;
+}
+
+/* Button Styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: wheat;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff006f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    label,
+    input,
+    select,
+    button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  position: relative;
+  height: 690px; /* Adjust height as needed for the banner */
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures the image doesn't overflow outside the header */
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensures the image fills the width of the header */
+  height: 100%; /* Ensures the image fills the height of the header */
+  object-fit: cover; /* Ensures the image covers the header area without stretching */
+  z-index: 1; /* Puts the image behind the text */
+}
+
+nav {
+  background-color: #360ee7 rgb(red, green, blue);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #1abc9c;
+  border-radius: 4px;
+}
+
+section {
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 8px;
+}
+
+section h2 {
+  font-size: 28px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.content div {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.content div:hover {
+  transform: scale(1.05);
+}
+
+.content img {
+  width: 100px;
+  /* Adjust size */
+  height: 100px;
+  /* Adjust size */
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h1,
+h2 {
+  color: #34495e;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+a {
+  color: #ff4081;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
